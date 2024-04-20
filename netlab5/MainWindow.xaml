@@ -7,15 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid Margin="327,41,44,52" x:Name="dgvDemo" RenderTransformOrigin="0.5,0.5">
-            <DataGrid.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.192"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </DataGrid.RenderTransform>
+        <DataGrid Margin="327,41,44,52" x:Name="dgvDemo">
+            
         </DataGrid>
         <Button Content="Grabar" HorizontalAlignment="Left" Margin="28,324,0,0" VerticalAlignment="Top" Click="Button_Click" RenderTransformOrigin="0.5,0.5" Height="32" Width="55">
             <Button.RenderTransform>
@@ -27,7 +20,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="Listar" HorizontalAlignment="Left" Margin="167,326,0,0" VerticalAlignment="Top" Click="Button_Click_1" Height="32" Width="50"/>
+        <Button Content="Listar" HorizontalAlignment="Left" Margin="217,331,0,0" VerticalAlignment="Top" Click="Listar_Click_1" Height="32" Width="50" RenderTransformOrigin="1.485,0.837"/>
         <TextBox x:Name="textBoxIdCliente" HorizontalAlignment="Left" Margin="10,22,0,0" TextWrapping="Wrap" Text="idCliente" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBoxNombreCompania" HorizontalAlignment="Left" Margin="157,22,0,0" TextWrapping="Wrap" Text="NombreCompañia" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBoxCargoContacto" HorizontalAlignment="Left" Margin="10,64,0,0" TextWrapping="Wrap" Text="CargoContacto" VerticalAlignment="Top" Width="120"/>
@@ -36,10 +29,12 @@
         <TextBox x:Name="textBoxCodPostal" HorizontalAlignment="Left" Margin="157,106,0,0" TextWrapping="Wrap" Text="CodPostal" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBoxPais" HorizontalAlignment="Left" Margin="10,152,0,0" TextWrapping="Wrap" Text="Pais" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBoxTelefono" HorizontalAlignment="Left" Margin="157,152,0,0" TextWrapping="Wrap" Text="Telefono" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxFax" HorizontalAlignment="Left" Margin="72,232,0,0" TextWrapping="Wrap" Text="Fax" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxFax" HorizontalAlignment="Left" Margin="10,238,0,0" TextWrapping="Wrap" Text="Fax" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBoxNombreContacto" HorizontalAlignment="Left" Margin="10,199,0,0" TextWrapping="Wrap" Text="NombreContacto" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBoxCiudad" HorizontalAlignment="Left" Margin="157,199,0,0" TextWrapping="Wrap" Text="Ciudad" VerticalAlignment="Top" Width="120"/>
-        
+        <Button Content="Actualizar" HorizontalAlignment="Left" Margin="110,327,0,0" VerticalAlignment="Top" Height="31" Width="66" Click="Button_Click_2"/>
+        <TextBox x:Name="textBoxActivo" HorizontalAlignment="Left" Margin="157,238,0,0" TextWrapping="Wrap" Text="Activo" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="24,388,0,0" VerticalAlignment="Top" Click="Eliminar_Click"/>
 
     </Grid>
 </Window>
